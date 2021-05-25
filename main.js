@@ -12,5 +12,5 @@ const tasks = [];
 setInterval(()=>tasks.forEach(task => task()), 50);
 
 export const libcheat = {
-	addTask: (task) => tasks.push(task);
+	addTask: (task) => tasks.push(task)
 }
