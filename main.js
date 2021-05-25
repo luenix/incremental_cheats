@@ -29,6 +29,7 @@ export const libcheat = {
 	},
 	clearTasks: () => tasks = [],
 	addButton: (onClick, label) => {
+		const div = document.getElementById(uidivid);
 		const button = document.createElement('button');
 		button.innerText = label;
 		button.addEventListener('click', onClick);
