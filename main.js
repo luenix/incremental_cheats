@@ -28,4 +28,11 @@ export const libcheat = {
 		tasks.push(task)
 	},
 	clearTasks: () => tasks = [],
+	addButton(onClick, label) => {
+		const button = document.createElement('button');
+		button.innerText = label;
+		button.addEventListener('click', onClick);
+		div.appendChild(button);
+		div.appendChild(document.createElement('br'));
+	},
 }
