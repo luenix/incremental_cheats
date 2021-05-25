@@ -28,7 +28,7 @@ export const libcheat = {
 		tasks.push(task)
 	},
 	clearTasks: () => tasks = [],
-	addButton(onClick, label) => {
+	addButton: (onClick, label) => {
 		const button = document.createElement('button');
 		button.innerText = label;
 		button.addEventListener('click', onClick);
