@@ -23,7 +23,7 @@ export const libcheat = {
 			div.appendChild(text);
 			div.appendChild(document.createElement('br'));
 
-			task = () => if(box.checked) task();
+			task = () => {if(box.checked) task()}
 		}
 		tasks.push(task)
 	},
