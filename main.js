@@ -66,6 +66,7 @@ export const libcheat = {
             const box = document.createElement("input");
             const text = document.createElement("span");
             text.innerText = label;
+            text.style = "-webkit-user-select: none; -moz-user-select: none; -o-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none;"
             box.setAttribute("type", "checkbox");
             div.appendChild(box);
             div.appendChild(text);
@@ -80,6 +81,7 @@ export const libcheat = {
         const div = document.getElementById(uidivid);
         const button = document.createElement("button");
         button.innerText = label;
+        button.style = "-webkit-user-select: none; -moz-user-select: none; -o-user-select: none; -ms-user-select: none; -khtml-user-select: none; user-select: none;"
         button.addEventListener("click", onClick);
         div.appendChild(button);
         div.appendChild(document.createElement("br"));
