@@ -40,7 +40,7 @@ export const draggable_div = {
 		// document.getElementById(container).style.cursor='default';
 		document.onmousemove = function(){}
 	},
-}();
+};
 
 const uidivid = "cheat_ui_div";
 (function() {
