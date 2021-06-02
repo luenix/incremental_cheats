@@ -3,7 +3,7 @@ const uidivid = 'cheat_ui_div';
 	if(document.getElementById(uidivid)) return;
 	const div = document.createElement('div');
 	div.id = uidivid;
-	div.style="border-width:3px;background-color:#cae8ca;border-style:solid;position:fixed;padding:7px;bottom:0;right:0;max-width:450px;z-index:999"
+	div.style="border-width:3px;background-color:#CCC;border-style:solid;position:fixed;padding:7px;bottom:0;right:0;max-width:450px;z-index:999"
 	document.body.appendChild(div);
 })();
 
@@ -25,7 +25,7 @@ export const libcheat = {
 			const oldtask = task;
 			task = () => {if(box.checked) oldtask()}
 		}
-		tasks.push(task)
+		tasks.push(task);
 	},
 	clearTasks: () => tasks = [],
 	addButton: (onClick, label) => {
