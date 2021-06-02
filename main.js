@@ -17,6 +17,7 @@ export const libcheat = {
 			const div = document.getElementById(uidivid);
 			const box = document.createElement('input');
 			const text = document.createElement('span');
+			text.style.color = '#66FF33';
 			text.innerText = label;
 			box.setAttribute("type", "checkbox");
 			div.appendChild(box);
