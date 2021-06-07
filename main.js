@@ -38,6 +38,7 @@ export const libcheat = {
 		div.appendChild(document.createElement('br'));
 	},
 	watch: (watcher) => {
+		const div = document.getElementById(uidivid);
 		const text = document.createElement('span');
 		text.style.color = '#66FF33';
 		text.innerText = "pending update";
