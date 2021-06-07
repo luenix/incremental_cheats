@@ -45,5 +45,16 @@ export const libcheat = {
 		div.appendChild(text);
 		div.appendChild(document.createElement('br'));
 		tasks.push(()=> text.innerText = watcher());
+	},
+	paramTask: (task, label) => {
+		const div = document.getElementById(uidivid);
+		const text = document.createElement('span');
+		text.style.color = '#66FF33';
+		text.innerText = label;
+		div.appendChild(text);
+		const input = document.createElement('input');
+		div.appendChild(input);
+		div.appendChild(document.createElement('br'));
+		tasks.push(()=> task(input.value));
 	}
 }
