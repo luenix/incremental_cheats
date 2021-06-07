@@ -37,4 +37,11 @@ export const libcheat = {
 		div.appendChild(button);
 		div.appendChild(document.createElement('br'));
 	},
+	watch: (watcher) => {
+		const text = document.createElement('span');
+		text.style.color = '#66FF33';
+		text.innerText = "pending update";
+		div.appendChild(document.createElement('br'));
+		tasks.push(()=> text.innerText = watcher());
+	}
 }
